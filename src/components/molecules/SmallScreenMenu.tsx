@@ -1,23 +1,9 @@
 import { IoCloseOutline } from "react-icons/io5";
 import { useHeaderMenuContext } from "../../context/HeaderMenuContext";
+import HeaderMenu from "../atoms/HeaderMenu";
 
-export default function HeaderMenu() {
+export default function SmallScreenMenu() {
   const { setIsOpen } = useHeaderMenuContext();
-
-  const menu = [
-    { title: 'About', icon: '' },
-    { title: 'Works', icon: '' },
-    { title: 'Contact', icon: '' },
-    { title: 'Resume', icon: '' },
-  ]
-
-  const mappedMenu = menu.map((entry, index) => {
-    return (
-      <div key={index}>
-        <span>{entry.title}</span>
-      </div>
-    )
-  })
 
   function handleCloseMenu() {
     setIsOpen(false);
@@ -32,7 +18,7 @@ export default function HeaderMenu() {
           </div>
         </div>
         <div className="flex flex-col gap-14 items-center justify-center my-16">
-          {mappedMenu}
+          <HeaderMenu />
         </div>
       </div>
     </div>

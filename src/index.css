@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,8 +8,11 @@ body {
   background-color: #15202B;
   font-family: 'Inter', 'sans-serif';
 }
+p {
+  margin: 0;
+}
 
-span {
+span, p {
   color: #eef2ff;
 }
 
@@ -17,3 +20,39 @@ span {
   transition: ease-in-out 200ms;
 }
 
+::selection {
+  color: white;
+  background: #436f88;
+}
+
+::-moz-selection {
+  color: white;
+  background: #436f88;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.scroller .scroller-inner {
+  animation: scroll 50s linear infinite;
+  width: max-content;
+}
+
+.scroller {
+  --webkit-mask: linear-gradient(
+    90deg, 
+    transparent, 
+    white 20%,
+    white 80%,
+    transparent);
+    
+  mask: linear-gradient(
+    90deg, 
+    transparent, 
+    white 20%,
+    white 80%,
+    transparent);
+}

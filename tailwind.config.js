@@ -1,6 +1,8 @@
 import { transform } from 'typescript';
 
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: [
     "./index.html",
@@ -10,9 +12,17 @@ export default {
     extend: {
       colors: {
         'blu': '#15202B',
-        'soft-blu': '#798ea6',
+        'strong-blu': '#2ba4b4',
+        'soft-blu': '#7c98b8',
         'blu-2': '#192633',
       },
+      fontFamily: {
+        'mono': ['"Courier Prime"', ...defaultTheme.fontFamily.mono],
+      }
+    },
+    screens: {
+      'xs': '425px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
