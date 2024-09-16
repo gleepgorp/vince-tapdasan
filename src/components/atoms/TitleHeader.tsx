@@ -8,7 +8,7 @@ export default function TitleHeader(props: TitleHeaderProps) {
   const { content } = props;
 
   return (
-    <span className="text-xl font-semibold font-mono xl:text-3xl">{content}</span>
+    <span className="text-2xl font-bold xl:text-3xl whitespace-nowrap">{content}</span>
   )
 }
 

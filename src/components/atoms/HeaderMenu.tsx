@@ -6,14 +6,14 @@ export default function HeaderMenu() {
 
   const mappedMenu = menu.map((entry, index) => {
     return (
-      <div key={index}>
+      <a href={entry.link} key={index} className='cursor-pointer'>
         <span>{entry.title}</span>
-      </div>
+      </a>
     )
   })
 
   return (
-    <div className={`${isLargeScreen ? 'flex flex-row gap-16' : 'flex flex-col gap-14 items-center justify-center my-16 '}`}>
+    <div className={`font-mono ${isLargeScreen ? 'flex flex-row gap-16 text-[15px]' : 'flex flex-col gap-14 items-center justify-center my-16 '}`}>
       {mappedMenu}
     </div>
   )

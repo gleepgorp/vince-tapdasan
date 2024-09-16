@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         'blu': '#15202B',
-        'strong-blu': '#2ba4b4',
+        'strong-blu': '#1D9BF0',
         'soft-blu': '#7c98b8',
         'blu-2': '#192633',
       },

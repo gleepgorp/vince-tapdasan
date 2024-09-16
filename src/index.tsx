@@ -9,13 +9,11 @@ export default function Index(): JSX.Element {
   //const aboutMeRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="flex flex-col h-screen">
-      <MainLayout>
-        <Home />
-        <AboutMe />
-        <Works />
-        <Contact />
-      </MainLayout>
-    </div>
+    <MainLayout>
+      <Home />
+      <AboutMe />
+      <Works />
+      <Contact />
+    </MainLayout>
   )
 }

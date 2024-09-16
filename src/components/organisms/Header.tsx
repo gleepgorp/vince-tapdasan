@@ -18,7 +18,7 @@ export default function Header(): JSX.Element {
         <div className="flex flex-row justify-between items-center w-full">
           <div className="w-11 h-11 bg-slate-400 flex justify-center items-center rounded-full">VT</div>
           {!isLargeScreen ?
-            <div onClick={handleOpenMenu}>
+            <div onClick={handleOpenMenu} className="cursor-pointer">
               <RxHamburgerMenu className="text-2xl text-stone-200"/>
             </div>
             : 

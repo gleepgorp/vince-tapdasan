@@ -8,7 +8,7 @@ export default function Pill(props: PillProps) {
   const { content } = props;
 
   return (
-    <div className='p-2 text-xs border-2 border-strong-blu bg-cyan-800 rounded-full'>
+    <div className='py-2 px-3 text-xs bg-strong-blu/15 font-bold text-sky-400 rounded-full'>
       {content}
     </div>
   )

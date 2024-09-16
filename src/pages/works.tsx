@@ -1,12 +1,19 @@
 import React from 'react'
 import TitleHeader from '../components/atoms/TitleHeader'
+import TitleHeaderLayout from '../components/atoms/TitleHeaderLayout'
+import ProjectCard from '../components/atoms/ProjectCard'
+import HorizontalLine from '../components/atoms/HorizontalLine'
 
 export default function Works() {
   return (
-    <div className="h-svh flex items-center">
-      <div className="flex flex-col gap-4">
-        <TitleHeader content='My Works'/>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem natus velit nesciunt possimus aspernatur architecto, a accusamus laudantium ex maxime, recusandae sed consectetur aliquid voluptas deleniti voluptates nulla odio.</span>
+    <div id='works' className="h-full gap-6 lg:gap-10 flex flex-col justify-center py-24 w-full max-w-[920px]">
+      <TitleHeaderLayout>
+        <TitleHeader content={`Some things I've built`}/>
+        <HorizontalLine />
+      </TitleHeaderLayout>  
+      <div className='flex flex-col lg:flex-row gap-6 lg:gap-8'>
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </div>
   )
