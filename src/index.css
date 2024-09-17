@@ -6,7 +6,7 @@
 
 body {
   background-color: #15202B;
-  font-family: 'Inter', 'sans-serif';
+  font-family: 'Inter', 'Arial', 'sans-serif';
   scroll-behavior: smooth;
 }
 p {
@@ -18,7 +18,7 @@ span, p {
 }
 
 * {
-  transition: ease-in-out 200ms;
+  transition: ease-in-out 150ms;
 }
 
 ::selection {
@@ -56,4 +56,8 @@ span, p {
     white 20%,
     white 80%,
     transparent);
+}
+
+.social {
+  transition: ease-in-out !important;
 }

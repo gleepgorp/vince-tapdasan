@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import MainLayout from "./layout/MainLayout";
 import Works from "./pages/works";
 import Contact from "./pages/contact";
+import Footer from "./components/organisms/Footer";
 
 export default function Index(): JSX.Element {
   //const aboutMeRef = useRef<HTMLDivElement>(null);
@@ -14,6 +15,7 @@ export default function Index(): JSX.Element {
       <AboutMe />
       <Works />
       <Contact />
+      <Footer />
     </MainLayout>
   )
 }
