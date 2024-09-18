@@ -24,7 +24,7 @@ export default function CoolButton(props: ButtonTypes): JSX.Element {
 
   return (
     <div className={classes}>
-      <div className="absolute right-0 top-0 w-0 h-full group-hover:w-full group-hover:bg-sky-500 ease-out duration-300"></div>
+      <div className="absolute left-0 top-0 w-0 h-full group-hover:w-full group-hover:bg-sky-500 ease-out duration-300"></div>
       <div className="relative z-10 text-stone-300">
         {children}
       </div>

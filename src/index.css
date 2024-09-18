@@ -58,6 +58,12 @@ span, p {
     transparent);
 }
 
+.mask {
+  --webkit-mask: linear-gradient(360deg, transparent, white);
+  mask: linear-gradient(360deg, transparent, white);
+}
+
 .social {
   transition: ease-in-out !important;
 }
+
