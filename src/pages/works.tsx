@@ -25,8 +25,8 @@ export default function Works() {
   })
 
   return (
-    <div id='works' className="h-full gap-6 lg:gap-10 flex flex-col justify-center py-24 w-full max-w-[1024px]">
-      <TitleHeaderLayout>
+    <section id="works" className="h-full gap-6 lg:gap-10 flex flex-col justify-center py-24 w-full max-w-[1024px]">
+      <TitleHeaderLayout isAboutMe={true}>
         <TitleHeader content={`Things I've built`}/>
         <HorizontalLine />
       </TitleHeaderLayout>  
@@ -34,7 +34,7 @@ export default function Works() {
         {worksMapped}
       </div>
       <GraphicWorksSection />
-    </div>
+    </section>
   )
 }
 

@@ -3,6 +3,7 @@ import { PiGithubLogo } from "react-icons/pi";
 import Pill from './Pill';
 import ProjectCardLayout from './ProjectCardLayout';
 import ProjectCardHeader from './ProjectCardHeader';
+import { Link } from 'react-router-dom';
 
 type ProjectCardProps = {
   title: string;
@@ -30,11 +31,11 @@ export default function ProjectCard(props: ProjectCardProps) {
         title={title} 
         description={description}
       />
-      <a href={link}>
+      <Link to={link}>
         <div className='lg:h-80 group overflow-hidden bg-sky-800 cursor-pointer'>
           <img src={img} alt={title} className='lg:h-80 object-cover opacity-30 group-hover:opacity-100 group-hover:scale-105'/>
         </div>
-      </a>
+      </Link>
       <div className='flex flex-col'>
         <div className='p-4 md:py-6 md:px-6 w-full flex flex-row gap-2 flex-wrap'>
           {techstackMapped}
@@ -44,7 +45,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             <a href={githubLink} target='_blank'>
               <PiGithubLogo className='text-2xl fill-sky-300 cursor-pointer hover:fill-sky-500' title='Github'/>
             </a>
-            <a href={link} className='text-sky-200 active:scale-95 cursor-pointer p-2 bg-sky-500/20 text-xs rounded-lg hover:bg-sky-600/20'>Learn more</a>
+            <Link to={link} className='text-sky-200 active:scale-95 cursor-pointer p-2 bg-sky-500/20 text-xs rounded-lg hover:bg-sky-600/20'>Learn more</Link>
           </div>
         </div>
       </div>

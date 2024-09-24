@@ -1,0 +1,21 @@
+export const designImages = [
+  { img: "/assets/designs/galaxy-race.avif", filter: "illustration", alt: "galaxy-base" },
+  { img: "/assets/designs/digital-addiction.avif", filter: "illustration", alt: "digital-addiction" },
+  { img: "/assets/designs/luna.avif", filter: "logo", alt: "luna" },
+  { img: "/assets/designs/sol.avif", filter: "logo", alt: "sol" },
+  { img: "/assets/designs/wastewatch.avif", filter: "logo", alt: "EZ Laundry" },
+  { img: "/assets/designs/handy.avif", filter: "logo", alt: "EZ Laundry" },
+  { img: "/assets/designs/dumpling.avif", filter: "logo", alt: "dumpling" },
+  { img: "/assets/designs/fuyooh.avif", filter: "logo", alt: "fuyooh" },
+  { img: "/assets/designs/ezLaundry.avif", filter: "logo", alt: "EZ Laundry" },
+  { img: "/assets/designs/knot.avif", filter: "logo", alt: "knot" },
+  { img: "/assets/designs/swaplit.avif", filter: "logo", alt: "swaplit" },
+  { img: "/assets/designs/wheely-rev.avif", filter: "logo", alt: "wheely-rev" },
+  { img: "/assets/designs/kadugo.avif", filter: "logo", alt: "kadugo" },
+  { img: "/assets/designs/larga.avif", filter: "logo", alt: "larga" },
+  { img: "/assets/designs/trace.avif", filter: "logo", alt: "trace" },
+  { img: "/assets/designs/shirt-1.avif", filter: "shirt", alt: "shirt-1" },
+  { img: "/assets/designs/shirt-2.avif", filter: "shirt", alt: "shirt-2" },
+  { img: "/assets/designs/shirt-3.avif", filter: "shirt", alt: "shirt-3" },
+]
+

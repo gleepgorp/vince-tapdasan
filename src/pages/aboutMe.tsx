@@ -25,7 +25,7 @@ export default function AboutMe(): JSX.Element {
   })
 
   return (
-    <div id="about" className="h-full max-[425px]:mb-24 min-[1860px]:mx-72 py-24 max-w-[920px]">
+    <section id="about" className="h-full max-[425px]:mb-24 min-[1860px]:mx-72 py-24 max-w-[920px]">
       <div className="h-full flex flex-col gap-10 justify-center">
         <TitleHeaderLayout isAboutMe={true}>
           <TitleHeader content="About me"/> 
@@ -57,6 +57,6 @@ export default function AboutMe(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
