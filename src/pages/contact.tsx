@@ -10,7 +10,9 @@ export default function Contact() {
         <span className='text-center text-sky-200 font-light lg:text-lg lg:w-96'>
           Reach out to my email if you're looking for a software developer that aligns your tech stack with mine, and I'll respond to it as soon as possible!
         </span>
-        <CoolButton>Say Hello!</CoolButton>
+          <a title='tapdasan.vins@gmail.com' href='https://mail.google.com/mail/u/0/?fs=1&to=tapdasan.vins@gmail.com&su=&body=&tf=cm' target='_blank' className=''>
+            <CoolButton>Say hello!</CoolButton>
+          </a>
       </div>
     </section>
   )

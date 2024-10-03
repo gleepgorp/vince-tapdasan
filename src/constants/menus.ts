@@ -2,7 +2,7 @@ export const headerMenu = [
   { title: 'About', icon: '', link: '#about' },
   { title: 'Works', icon: '', link: '#works' },
   { title: 'Contact', icon: '', link: '#contact' },
-  { title: 'Resume', icon: '', link: '#resume' },
+  { title: 'Resume', icon: '', link: '/resume' },
 ]
 
 import { PiGithubLogo } from "react-icons/pi";

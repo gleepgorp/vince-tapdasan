@@ -1,5 +1,6 @@
 export const works = [
   { 
+    id: 1,
     title: "Chsms!", 
     description: "A real-time web chat application made for fun while also learning the tech-stack.",  
     img: "/assets/chsms-cover.avif",
@@ -8,10 +9,11 @@ export const works = [
     githubLink: "https://github.com/gleepgorp/chsms-chat",
   },
   { 
+    id: 2,
     title: "UC PaperTrace", 
     description: "A thesis project, document tracking system for University of Cebu Lapu-Lapu Mandaue.",  
     img: "/assets/papertrace.avif",
-    techstack: [ "ReactJS", "ASP.NET", "CSS", "MaterialUI", "MySQL" ],
+    techstack: [ "ReactJS", "ASP.NET", "C#", "MaterialUI", "MySQL" ],
     link: "/uc-papertrace",
     githubLink: "https://github.com/ivan-clark/paper-trace",
   },

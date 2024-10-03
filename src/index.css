@@ -17,6 +17,10 @@ span, p {
   color: #eef2ff;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 * {
   transition: ease-in-out 150ms;
 }

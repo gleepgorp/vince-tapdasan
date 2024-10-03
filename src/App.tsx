@@ -5,6 +5,7 @@ import Chsms from "./pages/chsms";
 import UCpapertrace from "./pages/UCpapertrace";
 import ErrorPage from "./pages/errorPage";
 import Designs from "./pages/designs";
+import Resume from "./pages/resume";
 
 export default function App() {
   return(
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/uc-papertrace" element={<UCpapertrace />}/>
         <Route path="/designs" element={<Designs />}/>
         <Route path="*" element={<ErrorPage />}/>
+        <Route path="/resume" element={<Resume />}/>
       </Routes>
     </BrowserRouter>
   )

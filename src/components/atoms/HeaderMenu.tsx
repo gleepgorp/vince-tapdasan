@@ -11,7 +11,7 @@ export default function HeaderMenu() {
   const hash = location.hash;
 
   const mappedMenu = headerMenu.map((entry, index) => {
-    const isResume = entry.link === "#resume";
+    const isResume = entry.link === "/resume";
     const isActive = (route: string) => {
       if (entry.link === route) { return true; }
     }
@@ -26,8 +26,9 @@ export default function HeaderMenu() {
         key={index} 
         href={entry.link} 
         onClick={closeMenu}
+        target={isResume ? '_blank' : ''}
         className="cursor-pointer flex items-center active:scale-95">
-          { entry.link === "#resume"
+          { entry.link === "/resume"
             ? <CoolButton>{title}</CoolButton>
             : <>{title}</>
           }
