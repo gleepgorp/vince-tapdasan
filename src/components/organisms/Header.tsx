@@ -3,7 +3,6 @@ import SmallScreenMenu from "../molecules/SmallScreenMenu";
 import { useHeaderMenuContext } from "../../context/HeaderMenuContext";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import HeaderMenu from "../atoms/HeaderMenu";
-import { Link } from "react-router-dom";
 
 export default function Header(): JSX.Element {
   const { setIsOpen } = useHeaderMenuContext();
