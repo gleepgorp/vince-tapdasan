@@ -12,7 +12,7 @@ type ButtonTypes = {
 }
 
 export default function CoolButton(props: ButtonTypes): JSX.Element {
-  const { children, variant } = props;
+  const { children, variant = 'primary' } = props;
   const classes = `
     py-3 px-3.5 rounded-lg
     cursor-pointer 

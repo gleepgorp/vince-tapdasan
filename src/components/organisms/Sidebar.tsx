@@ -1,4 +1,3 @@
-import React from 'react'
 import FooterMenu from '../atoms/FooterMenu'
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 

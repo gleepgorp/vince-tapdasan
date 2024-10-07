@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import MainLayout from '../layout/MainLayout'
 import { works, worksEnum } from '../constants/works'
 import ProjectShowcaseLayout from '../components/atoms/ProjectShowcaseLayout'

@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleHeader from '../components/atoms/TitleHeader'
 import TitleHeaderLayout from '../components/atoms/TitleHeaderLayout'
 import ProjectCard from '../components/atoms/ProjectCard'

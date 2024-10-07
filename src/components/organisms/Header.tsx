@@ -3,6 +3,7 @@ import SmallScreenMenu from "../molecules/SmallScreenMenu";
 import { useHeaderMenuContext } from "../../context/HeaderMenuContext";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import HeaderMenu from "../atoms/HeaderMenu";
+import { Link } from "react-router-dom";
 
 export default function Header(): JSX.Element {
   const { setIsOpen } = useHeaderMenuContext();
@@ -16,7 +17,11 @@ export default function Header(): JSX.Element {
     <>
       <div className="flex flex-row items-center gap-2 h-24 px-8 sm:px-14 fixed w-full z-50 backdrop-blur-lg bg-blu/80">
         <div className="flex flex-row justify-between items-center w-full">
-          <div className="w-11 h-11 bg-slate-400 flex justify-center items-center rounded-full">VT</div>
+          <a href="/">
+            <div className="w-11 h-11 flex justify-center items-center rounded-full">
+                <img src="/assets/vins-logo.svg" alt="vins-logo"/>
+            </div>
+          </a>
           {!isLargeScreen ?
             <button onClick={handleOpenMenu} className="cursor-pointer relative active:bg-sky-200/60">
               <div className="absolute -top-7 -right-5 p-4 rounded-full">

@@ -1,4 +1,3 @@
-import React from 'react'
 import CoolButton from '../components/atoms/CoolButton'
 
 export default function Contact() {

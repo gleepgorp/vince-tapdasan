@@ -1,8 +1,6 @@
-import React from 'react'
-
 type PillProps = {
   content: string;
-  mainPage: boolean;
+  mainPage?: boolean;
 }
 
 export default function Pill(props: PillProps) {

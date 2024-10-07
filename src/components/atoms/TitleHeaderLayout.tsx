@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 type TitleHeaderLayoutProps = {

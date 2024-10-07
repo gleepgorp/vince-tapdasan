@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoMdArrowDropright } from 'react-icons/io'
 
 type FeaturedProjectProps = {

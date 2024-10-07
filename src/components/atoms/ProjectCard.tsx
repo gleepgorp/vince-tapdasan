@@ -1,4 +1,3 @@
-import React from 'react';
 import { PiGithubLogo } from "react-icons/pi";
 import Pill from './Pill';
 import ProjectCardLayout from './ProjectCardLayout';

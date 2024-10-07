@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleHeaderLayout from '../atoms/TitleHeaderLayout'
 import TitleHeader from '../atoms/TitleHeader'
 import HorizontalLine from '../atoms/HorizontalLine'

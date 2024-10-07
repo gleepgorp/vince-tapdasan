@@ -1,6 +1,5 @@
 import Pill from "../components/atoms/Pill"
 import TitleHeader from "../components/atoms/TitleHeader"
-import { ImUser } from "react-icons/im";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import HorizontalLine from "../components/atoms/HorizontalLine";
 import TitleHeaderLayout from "../components/atoms/TitleHeaderLayout";
@@ -43,9 +42,13 @@ export default function AboutMe(): JSX.Element {
             }
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex justify-center">
-              <div className="bg-sky-200/30 p-1.5 rounded-lg">
-                <ImUser className="w-44 h-44 lg:w-52 lg:h-52 xl:w-72 xl:h-72 fill-slate-300/60"/>
+            <div className="flex justify-center md:w-56 lg:w-72 xl:w-80 group relative">
+              <div className="p-1.5 rounded-lg">
+                <img src="/assets/ms-paint-vins.png" 
+                  alt="ms-paint-vins" 
+                  className="rounded-md w-full h-full group-hover:opacity-0 duration-[2500ms] absolute object-cover top-0 bottom-0 left-0 cursor-[url(assets/vins-logo.svg),_pointer]"
+                />
+                <img src="/assets/vins.avif" alt="vins" className="rounded-md w-full h-full object-cover"/>
               </div>
             </div>
             {isLargeScreen && 

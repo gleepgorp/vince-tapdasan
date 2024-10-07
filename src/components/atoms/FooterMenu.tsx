@@ -1,4 +1,3 @@
-import React from 'react'
 import { footerMenu } from '../../constants/menus';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 
